@@ -8,3 +8,8 @@ terraform {
     prefix = "terraform"
   }
 }
+
+data "google_compute_subnetwork" "vpc-existente" {
+  name = "vpc-existente"
+  region = "us-east1"
+}
